@@ -1,0 +1,162 @@
+/*DESKTOP*/
+body, html {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+}
+
+main {
+    width: 350px;
+    margin: 150px auto;
+    padding: 24px;
+    background: hsl(216, 50%, 16%);
+    border-radius: 12px;
+    position: relative;
+}
+
+.hero {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition-property: background;
+    transition-duration: 3s;
+}
+
+.herohover {
+    background-color: hsla(178, 100%, 50%, .5);
+    position: absolute;
+    top: 24px;
+    height: 350px;
+    width: 350px;
+    border-radius: 8px;
+    opacity: 0;
+    transition: all;
+    transition-duration: 3s;
+}
+
+.herohover:hover, h2:hover, .name:hover{
+    opacity: 1;
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.iconeye {
+    position: absolute;
+    top: 151px;
+    left: 151px;
+}
+
+h2 {
+    color: hsl(0, 0%, 100%);
+    margin: 30px 0 28px 0;
+    font-weight: 600;
+    font-size: 22px;
+    transition: all;
+    transition-duration: 3s;
+}
+
+.info {
+    color: hsl(215, 51%, 70%);
+    margin: 0 0 34px 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    font-size: 16px;
+}
+
+.ic {
+    margin-right: 8px;
+}
+
+.eth {
+    color: hsl(178, 100%, 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+}
+
+.cl {
+    color: hsl(215, 51%, 70%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+}
+
+.empty {
+    height: 1px;
+    width: 100%;
+    background: hsl(215, 32%, 27%);
+    margin-bottom: 16px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.profile img {
+    height: 30px;
+    width: 30px;
+    border: solid 1px hsl(0, 0%, 100%);
+    border-radius: 50%;
+}
+
+.pinfo .lname{
+    margin-left: 16px;
+    color: hsl(215, 51%, 70%);
+}
+
+.name{
+    color: hsl(0, 0%, 100%);
+    margin-left: 8px;
+    transition: all;
+    transition-duration: 3s;
+}
+
+/*MOBILE*/
+
+@media only screen and (max-width: 375px){
+    main {
+        width: 276px;
+        margin: 62px auto;
+    }
+
+    .herohover {
+        height: 275px;
+        width: 275px;
+    }
+
+    .iconeye {
+        top: 114px;
+        left: 114px;
+    }
+
+    h2 {
+        margin: 30px 0 24px 0;
+        font-size: 20px;
+    }
+
+    .info {
+        margin: 0 0 24px 0;
+        font-size: 16px;
+    }
+
+    .price {
+        margin-bottom: 20px;
+    }
+}
+
+
