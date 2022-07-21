@@ -38,8 +38,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [NFT Preview](https://www.frontendmentor.io/solutions/responsive-product-preview-card-using-html5-css-grid-and-flex-zKPbpLBAmx)
-- Live Site URL: [NFT Preview](https://source-web.github.io/product-preview-card/)
+- Solution URL: [NFT Preview](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U/hub/responsive-nft-product-preview-card-using-css-flex-box-88Fo1Ar5jY)
+- Live Site URL: [NFT Preview](https://source-web.github.io/nft-preview-card/)
 
 ## My process
 
