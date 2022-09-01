@@ -1,5 +1,14 @@
 /*DESKTOP*/
-body, html {
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
     padding: 0;
     margin: 0;
     width: 100%;
@@ -12,7 +21,12 @@ main {
     margin: 150px auto;
     padding: 24px;
     background: hsl(216, 50%, 16%);
-    border-radius: 12px;
+    border-radius: 15px;
+}
+
+.container {
+    width: 100%;
+    height: auto;
     position: relative;
 }
 
@@ -27,16 +41,18 @@ main {
 .herohover {
     background-color: hsla(178, 100%, 50%, .5);
     position: absolute;
-    top: 24px;
-    height: 350px;
-    width: 350px;
+    top: 0;
+    height: 302px;
+    width: 302px;
     border-radius: 8px;
     opacity: 0;
     transition: all;
     transition-duration: 3s;
 }
 
-.herohover:hover, h1:hover, .name:hover{
+.herohover:hover,
+h1:hover,
+.name:hover {
     opacity: 1;
     color: hsl(178, 100%, 50%);
     cursor: pointer;
@@ -44,13 +60,18 @@ main {
 
 .iconeye {
     position: absolute;
-    top: 151px;
-    left: 151px;
+    top: 127px;
+    left: 127px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 h1 {
     color: hsl(0, 0%, 100%);
-    margin: 30px 0 28px 0;
+    margin: 20px 0 16.5px 0;
     font-weight: 600;
     font-size: 22px;
     transition: all;
@@ -59,21 +80,21 @@ h1 {
 
 .info {
     color: hsl(215, 51%, 70%);
-    margin: 0 0 34px 0;
-    font-weight: 400;
+    margin: 0 0 22px 0;
+    font-weight: 100;
     font-size: 18px;
-    line-height: 1.8;
+    line-height: 1.48;
 }
 
 .price {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 24px;
+    margin-bottom: 23px;
     font-size: 16px;
 }
 
 .ic {
-    margin-right: 8px;
+    margin-right: 7px;
 }
 
 .eth {
@@ -81,7 +102,9 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: 400;
+    font-weight: 500;
+    text-shadow: 0 0 2px hsl(178, 100%, 50%);
+    letter-spacing: .3px;
 }
 
 .cl {
@@ -89,7 +112,13 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 1px;
     font-weight: 300;
+    letter-spacing: .2px;
+}
+
+.cl label {
+    margin-right: 1.4px;
 }
 
 .empty {
@@ -103,60 +132,86 @@ h1 {
     display: flex;
     align-items: center;
     padding: 0;
+    margin-bottom: 8px;
     font-weight: 300;
     font-size: 16px;
 }
 
 .profile img {
-    height: 30px;
-    width: 30px;
+    height: 33px;
+    width: 33px;
     border: solid 1px hsl(0, 0%, 100%);
     border-radius: 50%;
 }
 
-.pinfo .lname{
+.pinfo .lname {
     margin-left: 16px;
     color: hsl(215, 51%, 70%);
+    letter-spacing: .2px;
 }
 
-.name{
+.name {
     color: hsl(0, 0%, 100%);
-    margin-left: 8px;
     transition: all;
     transition-duration: 3s;
+    letter-spacing: .1px;
 }
 
 /*MOBILE*/
 
-@media only screen and (max-width: 375px){
+@media only screen and (max-width: 375px) {
     main {
-        width: 276px;
+        width: calc(100vw - 48px);
         margin: 62px auto;
     }
 
     .herohover {
-        height: 275px;
-        width: 275px;
+        height: calc(100% - 3px);
+        width: 100%;
     }
 
     .iconeye {
-        top: 114px;
-        left: 114px;
+        top: calc(50% - 24px);
+        left: calc(50% - 24px);
     }
 
     h1 {
-        margin: 30px 0 24px 0;
+        margin: 20px 0 14px 0;
+        font-size: 22px;
+    }
+
+    .info {
+        margin: 0 0 14px 0;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .price {
+        margin-bottom: 16px;
+        font-size: 15px;
+    }
+
+    .profile {
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    h1 {
         font-size: 20px;
     }
 
     .info {
-        margin: 0 0 24px 0;
-        font-size: 16px;
+        font-size: 15px;
+        line-height: 1.4;
     }
 
     .price {
-        margin-bottom: 20px;
+        font-size: 14px;
     }
+
+    .pinfo {
+        font-size: 14px;
+    }
+
 }
-
-

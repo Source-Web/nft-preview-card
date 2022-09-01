@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  
+
   <title>Frontend Mentor | NFT preview card component</title>
 </head>
+
 <body>
   <main>
-    <img src="./images/image-equilibrium.jpg" alt="Equilibrium" class="hero">
-    <div class="herohover">
-      <img src="./images/icon-view.svg" alt="eye_icon" class="iconeye">
+    <div class="container">
+      <img src="./images/image-equilibrium.jpg" alt="Equilibrium" class="hero">
+      <div class="herohover">
+        <img src="./images/icon-view.svg" alt="eye_icon" class="iconeye">
+      </div>
     </div>
-    
-    <h1>Equilibrium #3429</h1>
+    <h1><a href="#0" aria-label="Learn More About Our Equiliburum Collection">Equilibrium #3429</a></h1>
     <p class="info">Our Equilibrium collection promotes balance and calm.</p>
     <div class="price">
       <div class="eth">
@@ -33,8 +37,10 @@
     <div class="empty"></div>
     <div class="profile">
       <img src="./images/image-avatar.png" alt="profile_image">
-      <p class="pinfo"><label class="lname">Creation of</label><label class="name">Jules Wyvern</label></p>
+      <p class="pinfo"><label class="lname">Creation of</label><a href="#0" aria-label="Visit Creatiors Profile"
+          class="name">&nbsp;Jules Wyvern</a></p>
     </div>
   </main>
 </body>
+
 </html>
